@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    border: 2px solid black;
+}
+
+    header{    
+        border: 2px solid red;
+        height: 249px;
+        
+    }
+    main{
+        border: 2px solid red;
+        height: 1950px;
+    }
+    footer{
+        border: 2px solid red;
+        height: 50px;
+    }
+
+        .navbar{
+            position: absolute;
+            border: 1px solid green;
+            margin: 100px 2%;
+            height: 50px;
+            width: 95%;
+        }
+            .navbar__enlace{
+                display: inline-block;
+                padding: 15px 0 0 4%;
+            }
+            .logo{
+                position: relative;
+                border: 1px solid orange;
+                width: 207px;
+                margin-left: 80%;
+                margin-top: 20px;
+            }
+            .logo img{
+                width: 100%;
+            }
+
+        .lateralbar{
+            border: 1px solid green;
+            width: 21%;
+            height: 90%;
+            display: inline-block;
+            vertical-align: top;
+        }
+            .lateralbar__title{
+                border: 3px solid yellow;
+                background-color: black;
+                width: 80%;
+                height: 5%;
+                margin: -50px 5% 0px 10%;
+            }
+            .lateralbar__title img{
+                width: 100%;
+            }
+           
+            .lateralbar__mentors{
+                border: 2px solid blue;
+                height: 90%;
+            }
+
+                .lateralbar__mentors__ficha{
+                    position: relative;
+                    border: 1px solid green;
+                    height: 25%;
+                    background-color: violet;
+                }
+
+                    .lateralbar__mentors__ficha__img{
+                        position: absolute;
+                        border-radius: 50%;
+                        width: 35%;
+                        margin: 10% 0% 0 10%;
+                        z-index: 2;
+                    }
+
+                    .lateralbar__mentors__ficha__text{
+                        position: absolute;
+                        background-color: seashell;
+                        height: 60%;
+                        width: 90%;
+                        margin: 35% 5% 0 5%;
+                        z-index: 1;
+                    }
+
+
+        .content{
+            border: 2px solid orange;
+            width: 78%;
+            height: 950px;
+            display: inline-block;
+            vertical-align: top;
+        }
+            .mainhead{
+                position: relative;
+                background-color: slateblue;
+                height: 700px;
+            }
+                .mainhead img{
+                    position: absolute;
+                    margin: 0 15% 0 15% ;
+                    width: 70%;
+                }
+                .mainhead__text{
+                    position: absolute;
+                    background-color: teal;
+                    height: 300px;
+                    width: 60%;
+                    margin: 25% 20% 0 20%;
+                }
+            
+            .nextdates{
+                position: relative;
+                background-color: orange;
+                height: 700px;
+                border: 3px solid red;
+                margin-top: 50px;
+            }
+                .nextdates__title{
+                    position: absolute;
+                    background-color: red;
+                    width: 50%;
+                    height: 10%;
+                    margin: 4% 25% 0 25%;
+                }
+
+                .nextdates__fulltime{
+                    position: absolute;
+                    background-color: palegreen;
+                    width: 66%;
+                    height: 75%;
+                    margin: 175px 0% 0% 0%;
+                }
+
+                    .nextdates__fulltime__title{
+                        background-color: royalblue;
+                        width: 40%;
+                        height: 15%;
+                        margin: 0 30% 0 30%;
+                    }
+
+                    .nextdates__fulltime__dates{
+                        background-color: salmon;
+                        display: inline-block;
+                        height: 85%;
+                        width: 49%;
+                    }
+                        .dates__text{
+                            background-color: seashell;
+                            height: 60%;
+                            width: 60%;
+                            margin: 10% 20% 0 20%;
+                        }
+                            .inscriptionbutton{
+                                width: 40%;
+                                height: 20%;
+                                margin: 4% 31% 0 31%;
+                            }
+                    
+                .nextdates__parttime{
+                    position: absolute;
+                    background-color: palegreen;
+                    width: 33%;
+                    height: 75%;
+                    margin: 175px 0% 0% 67%;
+                }
+                    .nextdates__parttime__title{
+                        background-color: royalblue;
+                        width: 85%;
+                        height: 15%;
+                        margin: 0 9% 0 9%;
+                    }
+                    
+                    .nextdates__parttime__dates{
+                        background-color: salmon;
+                        display: inline-block;
+                        height: 85%;
+                        width: 100%;
+                    }
+            
+            .contact{
+                background-color: orange;
+                height: 400px;
+                margin-top: 60px;
+                padding: 3% 20% 0 20%;
+            }
+
+            .contact a, p{
+                color: red;
+                margin: 1%;
+                display: block;
+                text-align: center;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    
+            
+
+
+
+
+        .footer__text{
+            display: block;
+            margin-top: 16px;
+            margin-left: 40px;
+        }

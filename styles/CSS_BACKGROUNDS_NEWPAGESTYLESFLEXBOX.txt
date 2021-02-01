@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*-----------------------ESTRUCTURA------------------------*/
+
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: salmon;
+    height: 250px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: seagreen;
+    height: 1800px;
+    display: flex;
+}
+footer{
+    background-color: red;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+    .navbar{
+        background-color: seashell;
+        height: 50px;
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+    }
+        .navbar__enlace{
+            margin-left: 5%;
+        }
+
+        .logo{
+            position: absolute;
+            right: 8%;
+        }
+        .logo img{
+            width: 100%;
+        }
+
+
+    .lateralbar{
+        background-color: steelblue;
+        width: 25%;
+        margin: 0.5% 0.5% 0.5% 0.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .lateralbar__title{
+            background-color: turquoise;
+            width: 80%;
+            height: 5%;
+            margin-top: -60px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .lateralbar__title img{
+            width: 100%;
+        }
+
+        .lateralbar__mentors{
+            background-color: violet;
+            width: 100%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+            .lateralbar__mentors__ficha__img{
+                width: 30%;
+                border-radius: 50%;
+                margin-bottom: -120px;
+                margin-left: -55%;
+                z-index: 2;
+            }
+            .lateralbar__mentors__ficha__text{
+                background-color: thistle;
+                width: 90%;
+                height: 20%;
+                z-index: 1;
+                display: flex;
+                flex-direction: column;
+            }
+
+
+    .content{
+        background-color: tan;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+
+    }
+        .mainhead{
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: -50px;
+        }
+            .mainhead__hole{
+                width: 100%;
+                height: 100%;
+                background-image: url("../img/background-image.jpg");
+                background-color: black;
+                background-size: 75%;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-position: 100% 0%;
+                z-index: 1;
+                border: 3px solid yellowgreen;
+            }
+
+            .mainhead__title{
+                
+                width: 60%;
+                margin-top: -14%;
+                z-index: 2;
+            }
+            .mainhead__title img{
+                width: 100%;
+            }
+
+        .nextdates{
+            background-color: tomato;
+            height: 40%;
+            margin-top: 4%;
+            display: flex;
+
+        }
+            .nextdates__title{
+                position: absolute;
+                background-color: white;
+                width: 40%;
+                height: 10%;
+                margin: 3% 0 0 18%;
+            }
+            .nextdates__fulltime{
+                background-color: violet;
+                width: 66.66%;
+                padding-top: 5%;
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+                .nextdates__fulltime__title{
+                    background-color: brown;
+                    width: 70%;
+                    height: 10%;
+                    margin-bottom: -20%;
+                }
+                .nextdates__fulltime__dates{
+                    background-color: burlywood;
+                    width: 40%;
+                    height: 50%;
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+
+            .nextdates__parttime{
+                background-color: blue;
+                width: 33.33%;
+                padding-top: 5%;
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+
+            }
+                .nextdates__parttime__title{
+                    background-color: brown;
+                    width: 100%;
+                    height: 10%;
+                    margin-bottom: -40%;
+                }
+                .nextdates__parttime__dates{
+                    background-color: burlywood;
+                    width: 75%;
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                    .dates__text{
+                        background-color: white;
+                        height: 80%;
+                        width: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                    
+
+        .contact{
+            background-color: turquoise;
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+/*-------------------FUENTES Y TAMAÑOS---------------------*/
+
+h1 {
+    font-family: 'Copperplate', Courier, monospace;
+}
+
+h2, p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+.lateralbar__mentors__ficha__text p, p{
+    margin: 12% 4%;
+    font-size: 105%;
+}
+
+.lateralbar__mentors__ficha__text h3 {
+    margin-left: 30%;
+    margin-top: 6%;
+    font-size: 130%;
+}
+
+.letscodertext{
+    padding-top:17%;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 200%;
+}
+
+.nextdates__fulltime__dates h1, .nextdates__parttime__dates h1{
+    font-size: 600%;
+}
+
+h1{
+    font-size: 300%;
+}
+
+.lateralbar__title h1{
+    font-size: 400%;
+}
+
+.navbar h1{
+    font-size: 200%;
+}
+
+.contact h1{
+    margin-bottom: 8%;
+}
+
+.contact a, .contact h2{
+    margin-bottom: 2%;
+}
+
+
+/*--------------COLORES DE FUENTES----------------*/
+
+
+a, .lateralbar__title, .nextdates__title, .nextdates__fulltime__title, .nextdates__parttime__title, .contact {
+    color: white;
+}
+
+
+
+
+/*-------------------BOTONES------------------*/
+
+
+a:hover{
+    color:  purple;
+    -webkit-text-stroke: 1px rgb(226, 3, 178);
+}
+
+.inscriptionbutton{
+    width: 60%;
+    height: 30%;
+    margin-top: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: rgb(85, 1, 67);
+    border: #fa00d9 2px outset;
+    background: linear-gradient(to bottom, #ffffff, rgb(255, 173, 230));
+    outline:none;
+}
+
+.inscriptionbutton:hover{
+    background: linear-gradient(to bottom, #ffffff, rgb(145, 74, 124));
+    color: rgb(226, 3, 178);
+}
