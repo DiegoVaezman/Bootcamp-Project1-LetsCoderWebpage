@@ -1,0 +1,35 @@
+
+/*----------------TABLA----------------*/
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td, th{
+    height: 30px;
+    font-family: verdana;
+}
+
+td{
+    font-size: 15px;
+}
+
+thead th:nth-child(1), thead th:nth-child(2), thead th:nth-child(3), thead th:nth-child(4), thead th:nth-child(5), thead th:nth-child(6) {
+    width: 16%;
+    height: 50px;
+    background-color: rgb(0, 25, 134);
+    color: white;
+}
+
+tbody tr:nth-of-type(even){
+    background-color: rgb(255, 249, 159);
+
+}
+
+
+/*------------------LISTA-----------------*/
+
+
+
