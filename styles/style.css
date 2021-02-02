@@ -296,8 +296,18 @@ h1{
 /*--------------COLORES DE FUENTES----------------*/
 
 
-a, .lateralbar__title, .nextdates__title, .nextdates__fulltime__title, .nextdates__parttime__title, .contact {
+/* a, .lateralbar__title, .nextdates__title, .nextdates__fulltime__title, .nextdates__parttime__title, .contact {
     color: white;
+} */
+h1, h2{
+    color: white;
+}
+.dates__text h1, .dates__text h2 {
+    color: black;
+}
+
+.inscriptionbutton h2{
+color: rgb(121, 13, 121)
 }
 
 .highlighted{
@@ -324,7 +334,6 @@ a:hover{
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    color: rgb(85, 1, 67);
     border: rgb(170, 0, 150) 4px outset;
     background: linear-gradient(to bottom, #ffffff, rgb(255, 173, 230));
     outline:none;
@@ -337,4 +346,12 @@ a:hover{
     font-size: 80%;
     width: 62%;
     height: 27%;
+}
+
+
+
+/*------------------INFO PAGE-------------------*/
+
+ul, table {
+    color: white;
 }
