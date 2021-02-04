@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar" id="home">
+            <a class="navbar__enlace" href="LetsCoderWebpage.html"><h1>Home</h1></a>
+            <a class="navbar__enlace" href="LetsCoderWebpageinfo.html"><h1>Bootcamp</h1></a>
+            <a class="navbar__enlace" href="LetsCoderWebpageform.html"><h1>Apúntate</h1></a>
+            <a class="navbar__enlace" href="LetsCoderWebpage.html#contacto"><h1>Contacto</h1></a>
+        </nav>
+
+        <div class="logo">
+            <img class ="logoimg" src="../img/letscoder-square.jpeg" alt="logo">
+        </div>
+    </header>
+
+
+    <main>
+        <div class="lateralbar" >
+
+            <div class="lateralbar__title">
+                <h1>CONÓCENOS</h1>
+            </div>
+
+            <div class="lateralbar__mentors">
+                <img class="lateralbar__mentors__ficha__img" src="../img/letscoder-square.jpeg" alt="mentorsimg">
+                <div class="lateralbar__mentors__ficha__text">
+                    <p class="letscodertext">¿Quieres aprender las tecnologías y metodologías necesarias para realizar una aplicación web completa? ¿Quieres aprender los fundamentos de programación necesarios para iniciar tu carrera como programador?<br>Nada sería posible sin nuestros mentores, y aquí te los presentamos:</p>
+                </div>
+
+                <img class="lateralbar__mentors__ficha__img" src="../img/lluis.jpg" alt="mentorsimg">
+                <div class="lateralbar__mentors__ficha__text">
+                    <h3>Lluís Garcia</h3>
+                    <br>
+                    <p>Nacido en un pequeño pueblo en el corazón de Cataluña, dedicándome al deporte hasta que decidí dar un giro a mi carrera profesional y empezar en el mundo de la programación.</p>
+                </div>
+
+                <img class="lateralbar__mentors__ficha__img" src="../img/Fer.jpeg" alt="mentorsimg">
+                <div class="lateralbar__mentors__ficha__text">
+                    <h3>Fernando Dos Santos</h3>
+                    <br>
+                    <p>De La Plata, Argentina, aunque un poco nómada. A mi background en finanzas le sumé Javascript como herramienta. Actualmente soy desarrollador frontend y colaboro con un proyecto en blockchain.</p>
+                </div>
+
+                <img class="lateralbar__mentors__ficha__img" src="../img/beto.jpg" alt="mentorsimg">
+                <div class="lateralbar__mentors__ficha__text">
+                    <h3>Alberto Dávila</h3>
+                    <br>
+                    <p>Madrileño apasionado por el mundo del fitness, nutrición y salud. La mayor parte de mi carrera se basó en el soporte al usuario y el Sysadmin pero la creatividad y el razonamiento lógico del mundo del desarrollo web me atraparon hasta el punto de dejar mi cómodo trabajo indefinido y empezar de cero con esto.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content">
+            <div  class="form__title">
+                <h1>FORMULARIO DE INSCRIPCIÓN</h1>
+            </div>
+
+            <form>
+                <div class="personalinfo">
+                    <div>
+                        <div> 
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" required>
+                        </div>
+                        <div>
+                            <label for="apellido1">Primer apellido</label>
+                            <input type="text" id="apellido1" required>
+                        </div>
+                        <div>
+                            <label for="apellido2">Segundo apellido</label>
+                            <input type="text" id="apellido2">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="edad">Edad</label>
+                            <input type="text" id="edad" required>
+                        </div>
+                        <div>
+                            <label for="ciudad">Ciudad</label>
+                            <input type="text" id="ciudad">
+                        </div>
+                        <div>
+                            <label for="laboral">Situación laboral</label>
+                            <select id="laboral">
+                            <option value="empleado">Empleado</option>
+                            <option value="desempleado">Desempleado</option>
+                            </select>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="courseinfo">
+                     <div>
+                        <div class="modalidad">
+                            <label for="modalidad">Modalidad</label>
+                            <div>
+                                <div>
+                                    <label for="cursofull">Full Time</label>
+                                    <input type="radio" id="cursofull" id="modalidad" name="curso" value="full" required>
+                                </div>
+                                <div>
+                                    <label for="cursopart">Part Time</label>
+                                    <input type="radio" id="cursopart" id="modalidad" name="curso" value="part" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ciudadbc">
+                            <label for="ciudadcurso">Ciudad Bootcamp</label>
+                            <select id="ciudadcurso">
+                                <option value="madrid">Madrid</option>
+                                <option value="barcelona">Barcelona</option>
+                                <option value="zaragoza">Zaragoza</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="fechacom">
+                            <label for="fecha">Fecha de comienzo</label>
+                            <input type="date" id="fecha" min="2021-01-24" max="2021-03-07" list="listasfechas">
+                                <datalist id="listasfechas">
+                                    <option value="2021-01-25">
+                                    <option value="2021-01-28">
+                                    <option value="2021-03-03">
+                                </datalist>   
+                        </div>
+
+                        <div class="conoc">
+                            <label for="conoc">¿Algún conocimiento?</label>
+                            <div>
+                                <div>
+                                    <label for="html">HTML</label>
+                                    <input type="checkbox" id="conoc" id="html" value="html">
+                                </div>
+                                <div>
+                                    <label for="css">CSS</label>
+                                    <input type="checkbox" id="conoc" id="css "value="css">
+                                </div>
+                                <div>
+                                    <label for="js">JavaScript</label>
+                                    <input type="checkbox" id="conoc" id="js" value="js">
+                                </div>
+                                <div>
+                                    <label for="Git">Git</label>
+                                    <input type="checkbox" id="conoc" id="git" value="html">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coments">
+                    <label for="comentarios">¿Algún comentario?</label>
+                    <input type="textarea" id="comentarios">
+                </div>
+
+               <div class="divbutton">
+                <button class="sendbutton"><h2>Enviar</h2></button>
+               </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+
+<footer>
+    <b>Contenido estructurado por DiegoNG</b>
+</footer>
+
+</html>

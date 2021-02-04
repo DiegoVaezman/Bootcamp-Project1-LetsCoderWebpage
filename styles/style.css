@@ -5,7 +5,7 @@
 }
 
 
-/*-----------------------ESTRUCTURA------------------------*/
+/*------------------------------------ESTRUCTURA----------------------------------------------*/
 
 
 body{
@@ -31,7 +31,7 @@ footer{
     display: flex;
     align-items: center;
     padding-left: 1%;
-    background-color: rgb(42, 0, 109);
+    background-color: rgb(98, 0, 136);
     border-top: 5px solid black;
 }
 
@@ -45,7 +45,7 @@ footer{
     }
         .navbar__enlace{
             margin-left: 5%;
-            text-decoration:none;
+            
         }
 
         .logo{
@@ -76,8 +76,8 @@ footer{
             width: 100%;
         }
         .lateralbar__mentors{
-            background-color:  rgba(136, 211, 255, 0.315);
-            box-shadow: 0px 0px 10px 6px rgba(136, 211, 255, 0.315);
+            background-color:  rgba(191, 136, 255, 0.315);
+            box-shadow: 0px 0px 10px 7px rgba(255, 136, 245, 0.96);
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -90,11 +90,11 @@ footer{
                 margin-top: 100px;
                 margin-left: -55%;
                 z-index: 2;
-                border:3px rgba(37, 0, 78, 0.692) solid;
+                border:6px rgba(117, 0, 250, 0.939) outset;
             }
             .lateralbar__mentors__ficha__text{
-                background-color:rgba(255, 255, 255, 0.733);
-                border:4px solid rgba(0, 0, 0, 0.678);
+                background-color:rgb(255, 255, 255);
+                border:6px double rgb(0, 0, 0);
                 width: 90%;
                 height: 350px;
                 margin-top: -80px;
@@ -104,7 +104,7 @@ footer{
             }
 
 
-/*----------------------------------------------------------------HOME-------------------------------------------------------------------*/
+/*------------------------------------------------------------------------HOME-----------------------------------------------------------------------------------*/
 
     .content{
         flex-grow: 1;
@@ -122,17 +122,10 @@ footer{
             .mainhead__hole{
                 width: 98%;
                 height: 100%;
-                
                 border: 5px solid;
                 border-image-source: linear-gradient(150deg, rgb(58, 1, 51) 60%, rgb(255, 101, 242) );
                 border-image-slice: 1;
-                         
-                background-image: url("../img/background-image1.jpg");
-                background-color: black;
-                background-size: 75%;
-                background-attachment: fixed;
-                background-repeat: no-repeat;
-                background-position: 100% 0%;
+                background-image: url("../img/background-image.jpg");
                 z-index: 1;
             }
 
@@ -235,7 +228,7 @@ footer{
 
 
 
-        /*----------------------------------------------------------------INFORMACIÓN BOOTCAMP-------------------------------------------------------------------*/
+        /*-------------------------------------------------------------------------INFORMACIÓN BOOTCAMP-------------------------------------------------------------------------------*/
 
       
 
@@ -301,7 +294,7 @@ footer{
 
 
 
-    /*---------------TABLAS--------------*/
+    /*------------------------------TABLAS-----------------------------------*/
 
             table {
                 text-align: center;
@@ -312,19 +305,16 @@ footer{
             
             td, th{
                 height: 35px;
-                font-family: 'Courier New', Courier, monospace;           /*>-----------igual se puede inclluir en fuentes*/
             }
             
             td{
                 font-size: 20px;
-
             }
             
             thead th:nth-child(1), thead th:nth-child(2), thead th:nth-child(3), thead th:nth-child(4), thead th:nth-child(5), thead th:nth-child(6), thead th:nth-child(7) {
                 width: 14%;
                 height: 50px;
                 background-image: linear-gradient(180deg, rgb(58, 1, 51) 5%, rgb(158, 14, 122) );
-                color: white;
                 font-size: 22px;
             }
             
@@ -334,7 +324,7 @@ footer{
             }
 
 
-    /*---------------LISTAS----------------*/        
+    /*-----------------------------LISTAS-------------------------------------*/        
                 
             li > h2{
                 font-size: 40px;
@@ -361,21 +351,125 @@ footer{
             }
 
 
+/*------------------------------------------------------------------------FORMULARIO---------------------------------------------------------------------------------------------------*/
+        
+
+
+
+            form{
+            height: 1000px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form__title{
+            height: 200px;
+            margin-top: 160px;
+        }
+
+
+
+            .personalinfo, .courseinfo{
+                height: 200px;
+                width: 100%;
+                padding: 0 30px 0 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-top: 35px;
+                padding-bottom: 35px;
+                border: 1px solid white;
+                background-image: linear-gradient(180deg, rgba(58, 1, 51, 0.57) 5%, rgba(158, 14, 122, 0.666) );
+            }
+
+                .personalinfo > div{
+                    display: flex;
+                }
+                    .personalinfo > div > div, .courseinfo > div > div{
+                        flex-grow: 1;
+                        width: 100%;
+                    }
+                    .personalinfo > div > div >input{
+                        width: 100%;
+                    }
+            
+
+                .courseinfo{
+                    height: 300px;
+                }
+                    .courseinfo > div{
+                        display: flex;
+                    }
+
+                .modalidad{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                    .modalidad > div{
+                        width: 100%;
+                        margin-top:10px;
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                
+                .ciudadbc, .fechacom, .conoc{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 100%;
+                    width: 100%;
+                    justify-content: space-between;
+                }
+                
+                    .conoc > div{
+                        margin-top: 15px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                
+
+                input[type="checkbox"]{
+                    width: 40px;
+                }
+
+                select, .fechacom > input, .conoc > input{
+                    width: 40%;
+                    font-size: 20px;
+                }
+
+                .coments{
+                    margin-top: 40px;
+                    display: flex;
+                }
+                    .coments > input{
+                        width: 350px;
+                        height: 100px;
+                    }
+                
+
+                .divbutton{
+                    height: 300px;
+                }
+            
 
 
 
 
 
 
-
-
-/*-------------------FUENTES Y TAMAÑOS---------------------*/
+/*------------------------------FUENTES Y TAMAÑOS--------------------------------------*/
 
 h1 {
     font-family: 'Copperplate', Courier, monospace;
 }
 
-h2, p{
+h2, p, label, td, th{
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -400,7 +494,7 @@ h1, h2, h3{
     font-weight: bold;
 }
 
-h2{
+h2, .navbar h1{
     font-size: 200%;
 }
 
@@ -416,10 +510,6 @@ h1{
     font-size: 400%;
 }
 
-.navbar h1{
-    font-size: 200%;
-}
-
 .contact h1{
     margin-bottom: 8%;
 }
@@ -428,21 +518,28 @@ h1{
     margin-bottom: 2%;
 }
 
+label, input{
+    font-size: 20px;
+    font-weight: bold;
+}
 
-/*--------------COLORES DE FUENTES----------------*/
+input{
+    width: 15%;
+}
 
 
-/* a, .lateralbar__title, .nextdates__title, .nextdates__fulltime__title, .nextdates__parttime__title, .contact {
-    color: white;
-} */
-h1, h2{
+/*--------------------------COLORES DE FUENTES-------------------------------*/
+
+
+
+h1, h2, .content, ul, table{
     color: white;
 }
 .dates__text h1, .dates__text h2 {
     color: black;
 }
 
-.inscriptionbutton h2{
+.inscriptionbutton h2, .sendbutton h2{
 color: rgb(121, 13, 121)
 }
 
@@ -454,18 +551,20 @@ color: rgb(121, 13, 121)
 
 
 
-/*-------------------BOTONES------------------*/
+/*--------------------------------BOTONES----------------------------------*/
 
+a{
+    text-decoration:none;
+}
 
 a:hover{
     color:  purple;
-    -webkit-text-stroke: 1px rgb(226, 3, 178);
+    -webkit-text-stroke: 2px rgb(226, 3, 178);
 }
 
-.inscriptionbutton{
-    width: 65%;
-    height: 30%;
-    margin-top: -10%;
+.inscriptionbutton, .sendbutton {
+    width: 200px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -474,20 +573,26 @@ a:hover{
     background: linear-gradient(to bottom, #ffffff, rgb(255, 173, 230));
     outline:none;
 }
+.inscriptionbutton{
+    margin-top: -10%;
+}
+.sendbutton{
+    margin-top: 50px;
+}
 
-.inscriptionbutton:hover{
+
+
+.inscriptionbutton:hover, .sendbutton:hover{
     background: linear-gradient(to bottom, #ffffff, rgb(245, 113, 205));
     color:  rgb(121, 13, 121);
     -webkit-text-stroke: 2px rgb(248, 98, 216);
     font-size: 80%;
-    width: 62%;
-    height: 27%;
+    width: 190px;
+    height: 90px;
 }
 
 
 
-/*------------------INFO PAGE-------------------*/
 
-ul, table {
-    color: white;
-}
+
+
