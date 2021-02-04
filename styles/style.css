@@ -24,7 +24,6 @@ header {
 }
 
 main{
-    height: 2000px;
     display: flex;
 }
 footer{
@@ -68,8 +67,7 @@ footer{
     }
         .lateralbar__title{
             width: 80%;
-            height: 5%;
-            margin-top: -60px;
+            height: 100px;
             display: flex;
             justify-content: center;
             align-items: flex-end;
@@ -80,17 +78,16 @@ footer{
         .lateralbar__mentors{
             background-color:  rgba(136, 211, 255, 0.315);
             box-shadow: 0px 0px 10px 6px rgba(136, 211, 255, 0.315);
-            width: 100%;
-            height: 85%;
+            height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: start;
             align-items: center;
         }
             .lateralbar__mentors__ficha__img{
                 width: 30%;
                 border-radius: 50%;
-                margin-bottom: -120px;
+                margin-top: 100px;
                 margin-left: -55%;
                 z-index: 2;
                 border:3px rgba(37, 0, 78, 0.692) solid;
@@ -99,25 +96,28 @@ footer{
                 background-color:rgba(255, 255, 255, 0.733);
                 border:4px solid rgba(0, 0, 0, 0.678);
                 width: 90%;
-                height: 20%;
+                height: 350px;
+                margin-top: -80px;
                 z-index: 1;
                 display: flex;
                 flex-direction: column;
             }
 
 
+/*----------------------------------------------------------------HOME-------------------------------------------------------------------*/
+
     .content{
         flex-grow: 1;
         display: flex;
         flex-direction: column;
-
+        width: 80%;
     }
         .mainhead{
-            height: 30%;
+            height: 500px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: -50px;
+            margin-top: 100px;
         }
             .mainhead__hole{
                 width: 98%;
@@ -139,7 +139,7 @@ footer{
             .mainhead__title{
                 
                 width: 60%;
-                margin-top: -14%;
+                margin-top: -370px;
                 z-index: 2;
             }
             .mainhead__title img{
@@ -147,20 +147,20 @@ footer{
             }
 
         .nextdates{
-            height: 40%;
-            margin-top: 15%;
+            height: 800px;
+            margin-top: 200px;
             display: flex;
 
         }
             .nextdates__title{
                 position: absolute;
                 width: 40%;
-                height: 10%;
+                height: 50px;
                 margin: 0 0 0 18%;
             }
             .nextdates__fulltime{
                 width: 66.66%;
-                padding-top: 5%;
+                padding-top: 20px;
                 display:flex;
                 flex-direction: row;
                 align-items: center;
@@ -169,12 +169,12 @@ footer{
             }
                 .nextdates__fulltime__title{
                     width: 70%;
-                    height: 10%;
+                    height: 20px;
                     margin-bottom: -20%;
                 }
                 .nextdates__fulltime__dates{
                     width: 40%;
-                    height: 50%;
+                    height: 360px;
                     display:flex;
                     flex-direction: column;
                     align-items: center;
@@ -192,7 +192,7 @@ footer{
 
             .nextdates__parttime{
                 width: 37%;
-                padding-top: 5%;
+                padding-top: 60px;
                 display:flex;
                 flex-direction: row;
                 align-items: center;
@@ -202,12 +202,12 @@ footer{
             }
                 .nextdates__parttime__title{
                     width: 100%;
-                    height: 10%;
-                    margin-bottom: -36%;
+                    margin-bottom: -120px;
                 }
                 .nextdates__parttime__dates{
-                    width: 75%;
-                    height: 50%;
+                    width: 73%;
+                    height: 360px;
+                    margin-top: -40px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -224,12 +224,148 @@ footer{
                     
 
         .contact{
-            height: 30%;
+            margin-top: 70px;
+            margin-bottom: 200px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
+
+
+
+
+        /*----------------------------------------------------------------INFORMACIÓN BOOTCAMP-------------------------------------------------------------------*/
+
+      
+
+        .mainheadinfo{
+            padding: 50px 0 50px 0;
+        }
+            .logoinfo__title{
+                display: flex;
+                justify-content: center;
+            }
+            .logoinfo__title > img{
+                width: 50%;
+            }
+
+
+        .alumnossection{
+            display: flex;
+            flex-direction: column;
+            height: 30%;
+            margin-bottom: 50px;
+        }
+            .alumnossection__title{
+                height: 10%;
+            }
+            .alumnossection__table{
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+            }
+                
+        .horariosection{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 110px;
+        }
+            .horariosection__title{
+                height: 10%;
+                margin-bottom: 30px;
+            }
+            .horariosection__table {
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+            }
+            .horariosection__table > table{
+                height: 150px;
+                font-weight: bold;
+            }
+
+        .conceptossection{
+            display: flex;
+            flex-direction: column;
+        }
+            .conceptossection__title{
+                height: 10%;
+                margin-bottom: 70px;
+            }
+            .listas{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+
+
+    /*---------------TABLAS--------------*/
+
+            table {
+                text-align: center;
+                border-collapse: collapse;
+                border-spacing: 0;
+                width: 80%;
+            }
+            
+            td, th{
+                height: 35px;
+                font-family: 'Courier New', Courier, monospace;           /*>-----------igual se puede inclluir en fuentes*/
+            }
+            
+            td{
+                font-size: 20px;
+
+            }
+            
+            thead th:nth-child(1), thead th:nth-child(2), thead th:nth-child(3), thead th:nth-child(4), thead th:nth-child(5), thead th:nth-child(6), thead th:nth-child(7) {
+                width: 14%;
+                height: 50px;
+                background-image: linear-gradient(180deg, rgb(58, 1, 51) 5%, rgb(158, 14, 122) );
+                color: white;
+                font-size: 22px;
+            }
+            
+            tbody tr{
+                /* border-bottom: 1px solid rgba(165, 5, 240, 0.342); */
+                background-image: linear-gradient(180deg, rgba(36, 0, 32, 0.404) 90%, rgba(175, 22, 150, 0.692) );
+            }
+
+
+    /*---------------LISTAS----------------*/        
+                
+            li > h2{
+                font-size: 40px;
+                text-align: start;
+            }
+            dl{
+                margin-top: 30px;
+            }
+
+            ul{
+                width: 500px;
+            }
+
+            dd, dt {
+                line-height: 1;
+                }
+                
+            dt {
+            font-weight: bold;
+            }
+            
+            dd {
+            margin-bottom: 1.5rem;
+            }
+
+
+
+
+
+
+
 
 
 
