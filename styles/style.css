@@ -119,6 +119,7 @@ a:hover{
     border: rgb(170, 0, 150) 4px outset;
     background: linear-gradient(to bottom, #ffffff, rgb(255, 173, 230));
     outline:none;
+    font-size: 90%;
 }
 
 .inscriptionbutton{
@@ -179,9 +180,26 @@ footer{
     align-items: center;
 }
     .navbar__enlace{
-        margin-left: 5%;
-        
+        margin-left: 5%;   
     }
+    .burguer{
+        border: 1px solid rgb(161, 60, 161);
+        cursor: pointer;
+        margin-left: 30px;
+        display: none;
+    }
+    .navbar > input {
+        display: none;
+    }
+    .burguer > div{
+        width: 30px;
+        height: 5px;
+        margin: 5px;
+        background-color:rgb(255, 197, 255);
+    }
+    .navbar > input:checked  ~ a{
+        display:block;
+      }
 
     .logo{
         position: absolute;
@@ -538,6 +556,7 @@ form{
 }
     .courseinfo > div{
         display: flex;
+        height: 35%;
     }
 
     .modalidad{
@@ -602,14 +621,22 @@ form{
         background-image: none;
         background-color: black;
     }
-
+    header{
+        margin-bottom: 50px;
+    }
     .navbar{
         flex-direction: column;
-        justify-content: center;
         align-items: flex-start;
+        padding-top: 6px;
         width: 100%;
     }
 
+    .navbar > a{
+        display: none;
+    }
+    .burguer{
+        display: block;
+    }
     .navbar__enlace{
         font-size: 10px;
         margin-top: 15px;
@@ -746,10 +773,8 @@ form{
     }
 
     form{
-        height: 1250px;
+        height: 1350px;
         width: 90%;
-        margin-left: auto;
-        margin-right: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -760,7 +785,7 @@ form{
     }
 
     .personalinfo{
-        height: 400px;
+        height: 500px;
     }
 
     .personalinfo > div{
@@ -770,7 +795,8 @@ form{
     }
 
     .courseinfo{
-        height: 500px;
+        height: 700px;
+        justify-content: space-around;
     }
 
     .courseinfo > div{
@@ -778,8 +804,12 @@ form{
         flex-direction: column;
     }
 
+    .personalinfo > div > div{
+        margin-bottom: 20px;
+    }
+
     .courseinfo > div > div{
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 
     .coments{
