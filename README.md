@@ -7,6 +7,12 @@ Proyecto 1 del Bootcamp Let's Coder: Creación de página web estática del boot
 - Creación de formularios
 - Manejo de estilo con CSS3
 
+**Puedes acceder a la web a través de este enlace [LetsCoder_Webpage](https://vaezman.netlify.app/letscoder_webpage/letscoderwebpage/letscoderwebpage)**
+<br>
+<br>
+
+## Secciones
+
 **Sección Home**<br>
 Página principal con información sobre próximas fechas de inscripción y contacto.
 
