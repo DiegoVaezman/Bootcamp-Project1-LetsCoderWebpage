@@ -1,4 +1,6 @@
 # Let's Coder Webpage
+![letscoder_img](/img/letscoder-square.jpeg)
+<br>
 Proyecto 1 del Bootcamp Let's Coder: Creación de página web estática del bootcamp.
 
 - Manejo de HTML5
